@@ -1,11 +1,18 @@
 import React from "react"
+// import { Link } from "gatsby"
+import Header from "../components/header"
+import "../styles/global.scss"
+import Card from "../components/card"
 
-export default function Home() {
+const Home = () => {
   return (
     <div style={{ color: `purple` }}>
-      <h1>Hello Gatsby!</h1>
+      <Header headerText="Hello Gatsby" />
       <p>What a world.</p>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
+      <Card />
     </div>
   )
 }
+
+export default Home
