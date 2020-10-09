@@ -4,8 +4,17 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import "../styles/global.scss"
+import PostLink from "../components/post-link"
 
-const Home = ({ data }) => {
+const Home = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const Posts = edges
+    .filter(edge => !!edge.node.frontmatter.date)
+    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+
   return (
     <Layout>
       <section className="hero">
@@ -19,7 +28,7 @@ const Home = ({ data }) => {
             Check out my blog where I write about web development and the tech
             industry in general.
           </p>
-          <Link to="/blog/">My Blog</Link>
+          <div>{Posts}</div>
         </Container>
       </section>
     </Layout>
@@ -41,18 +50,18 @@ const Home = ({ data }) => {
   )
 }
 
-export const query = graphql`
+export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
-      totalCount
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
+          excerpt(pruneLength: 250)
           frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
             title
-            date(formatString: "DD MMMM, YYYY")
           }
-          excerpt
         }
       }
     }
