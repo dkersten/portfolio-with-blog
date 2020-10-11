@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Header from "../components/header"
+import Hero from "../components/hero"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import "../styles/global.scss"
@@ -17,11 +17,7 @@ const Home = ({
 
   return (
     <Layout>
-      <section className="hero">
-        <Container>
-          <Header headerText="Daniel Kersten, Web Developer" />
-        </Container>
-      </section>
+      <Hero></Hero>
       <section className="blog">
         <Container>
           <p>
