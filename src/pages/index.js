@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Hero from "../components/hero"
 import Layout from "../components/layout"
 import Container from "../components/container"
@@ -18,31 +18,17 @@ const Home = ({
   return (
     <Layout>
       <Hero></Hero>
-      <section className="blog">
+      <section className="blog-index">
         <Container>
           <p>
-            Check out my blog where I write about web development and the tech
-            industry in general.
+            Check out my blog. Here I write about my experiences as a web
+            developer and the general tech industry in general. I also have the
+            same stories posted on Medium.
           </p>
           <div>{Posts}</div>
         </Container>
       </section>
     </Layout>
-
-    // <div style={{ color: `purple` }}>
-    //   <Header headerText="Home Page" />
-    //   <Link to="/blog/">To Blog</Link>
-
-    //   <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-    //   {data.allMarkdownRemark.edges.map(({ node }) => (
-    //     <div key={node.id}>
-    //       <h3>
-    //         {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
-    //       </h3>
-    //       <p>{node.excerpt}</p>
-    //     </div>
-    //   ))}
-    // </div>
   )
 }
 

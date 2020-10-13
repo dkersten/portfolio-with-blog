@@ -1,6 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
 @import "./reset.scss"; // *,
 
 body {
   background: #1b1a22;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a,
+  div,
+  span {
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+section.blog-index {
+  margin: auto;
+  padding: 0 2rem;
+  max-width: 960px;
+  p {
+    color: #f0f0f0;
+    line-height: 1.5;
+  }
+
+  .blog-index-card {
+    background: #2a2935;
+    margin-top: 1.5rem;
+    padding: 2rem 1.5rem;
+
+    a {
+      font-size: 1.25rem;
+      color: #e31b6d;
+      line-height: 1.5;
+
+      &:hover {
+        color: #337ab7;
+      }
+    }
+  }
 }
