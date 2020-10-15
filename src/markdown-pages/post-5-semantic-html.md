@@ -1,6 +1,6 @@
 ---
 slug: "/blog/semantic-html"
-date: "2020-10-14"
+date: "2020-06-18"
 title: "Semantic HTML"
 ---
 

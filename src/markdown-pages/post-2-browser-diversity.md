@@ -1,6 +1,6 @@
 ---
 slug: "/blog/web-browser-diversity"
-date: "2020-10-14"
+date: "2020-04-14"
 title: "Web Browser Diversity"
 ---
 

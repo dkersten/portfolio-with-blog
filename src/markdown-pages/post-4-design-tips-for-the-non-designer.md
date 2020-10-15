@@ -1,6 +1,6 @@
 ---
 slug: "/blog/design-tips-for-the-non-designer"
-date: "2020-10-14"
+date: "2020-05-26"
 title: "Design Tips for the Non Designer"
 ---
 

@@ -1,6 +1,6 @@
 ---
 slug: "/blog/attempting-to-maintain-a-level-of-digital-privacy-and-security"
-date: "2020-10-14"
+date: "2020-05-05"
 title: "Attempting to Maintain a Level of Digital Privacy and Security"
 ---
 
