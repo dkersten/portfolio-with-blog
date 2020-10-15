@@ -52,7 +52,7 @@ section.blog-index {
 
   margin: auto;
   margin-top: 3rem;
-  max-width: 960px;
+  max-width: 768px;
 
   h1,
   h2,
@@ -118,6 +118,18 @@ section.blog-index {
       margin-left: 1.5rem;
       font-size: 1.15rem;
       margin-bottom: 0.25rem;
+    }
+
+    img {
+      margin-bottom: 1rem;
+    }
+
+    p.img-caption {
+      margin-top: -1.5rem;
+      font-style: italic;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      margin-left: 3rem;
     }
   }
 }
