@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 @import "./reset.scss"; // *,
 
 body {
@@ -44,6 +44,8 @@ section.blog-index {
 }
 
 .blog-post-container {
+  padding: 0 1rem 3rem;
+
   * {
     font-family: "Raleway", sans-serif;
   }
@@ -52,17 +54,26 @@ section.blog-index {
   margin-top: 3rem;
   max-width: 960px;
 
-  h1 {
-    font-size: 2.25rem;
-    margin-bottom: 0.75rem;
-    color: #f0f0f0;
+  h1,
+  h2,
+  h3 {
+    color: #d7d7d7;
   }
 
-  h2 {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #cecece;
-    color: #d7d7d7;
+  .blog-info {
+    h1 {
+      font-size: 2.25rem;
+      margin-bottom: 0.75rem;
+      color: #f0f0f0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #cecece;
+    }
   }
 
   .blog-post-content {
@@ -70,9 +81,43 @@ section.blog-index {
       color: #d7d7d7;
     }
 
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+
     p {
       font-size: 1.15rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin-bottom: 1rem;
+    }
+
+    ul li {
       line-height: 1.5;
+      list-style: circle;
+      margin-left: 1.5rem;
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
     }
   }
 }
